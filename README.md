@@ -1,6 +1,9 @@
 # @rbxts/basic-utilities
 A Roblox-TS package of basic utilities I use all the time and just want to share easily between my projects - open source because maybe someone else doesn't want to reinvent the wheel, too.
 
+# CONTRIBUTIONS WELCOME
+Please. This is a very general package. If you've got something to share, just share it here :)
+
 # Utilities List
  - Lazy&lt;T&gt; \
  A simple lazy loader for a value of type T
