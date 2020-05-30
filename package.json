@@ -1,22 +1,22 @@
 {
-  "name": "@rbxts/basic-classes",
-  "version": "1.0.0",
-  "description": "A Roblox-TS package of basic classes I use all the time and just want to share easily between my projects - open source because maybe someone else doesn't want to reinvent the wheel, too",
+  "name": "@rbxts/basic-utilties",
+  "version": "0.0.1",
+  "description": "A Roblox-TS package of basic utilties, such as Lazy<T> and StrictMap<K,V>",
   "main": "out/init.lua",
   "scripts": {
     "prepublishOnly": "rbxtsc"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/noahwillcrow/rbxts-basic-classes.git"
+    "url": "git+https://github.com/noahwillcrow/rbxts-basic-utilties.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/noahwillcrow/rbxts-basic-classes/issues"
+    "url": "https://github.com/noahwillcrow/rbxts-basic-utilties/issues"
   },
-  "homepage": "https://github.com/noahwillcrow/rbxts-basic-classes#readme",
+  "homepage": "https://github.com/noahwillcrow/rbxts-basic-utilties#readme",
   "publishConfig": {
     "access": "public"
   },
