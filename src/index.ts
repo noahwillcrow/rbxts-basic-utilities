@@ -1,3 +1,4 @@
-export function makeHello(name: string) {
-	return `Hello from ${name}!`;
-}
+export * from "./classes/Lazy";
+
+export * from "./classes/StrictMap";
+export * from "./interfaces/ReadonlyStrictMap";
