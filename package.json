@@ -1,22 +1,22 @@
 {
-  "name": "@rbxts/basic-utilties",
+  "name": "@rbxts/basic-utilities",
   "version": "0.0.1",
-  "description": "A Roblox-TS package of basic utilties, such as Lazy<T> and StrictMap<K,V>",
+  "description": "A Roblox-TS package of basic utilities, such as Lazy<T> and StrictMap<K,V>",
   "main": "out/init.lua",
   "scripts": {
     "prepublishOnly": "rbxtsc"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/noahwillcrow/rbxts-basic-utilties.git"
+    "url": "git+https://github.com/noahwillcrow/rbxts-basic-utilities.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/noahwillcrow/rbxts-basic-utilties/issues"
+    "url": "https://github.com/noahwillcrow/rbxts-basic-utilities/issues"
   },
-  "homepage": "https://github.com/noahwillcrow/rbxts-basic-utilties#readme",
+  "homepage": "https://github.com/noahwillcrow/rbxts-basic-utilities#readme",
   "publishConfig": {
     "access": "public"
   },
