@@ -50,7 +50,7 @@ export class StrictMap<K, V> implements ReadonlyStrictMap<K, V> {
 	}
 
 	public toReadonlyMap(): ReadonlyMap<K, V> {
-		return this.map;
+		return new ReadonlyMap(this.map.entries());
 	}
 
 	public toString() {
