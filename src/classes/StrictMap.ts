@@ -49,6 +49,10 @@ export class StrictMap<K, V> implements ReadonlyStrictMap<K, V> {
 		return this.map.size();
 	}
 
+	public toReadonlyMap(): ReadonlyMap<K, V> {
+		return this.map;
+	}
+
 	public toString() {
 		return this.map.toString();
 	}

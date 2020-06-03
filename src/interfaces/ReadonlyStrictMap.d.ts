@@ -39,6 +39,12 @@ export interface ReadonlyStrictMap<K, V extends defined> {
 	size(): number;
 
 	/**
+	 * Returns a readonly map with the same data.
+	 * Useful for networking through RBXScriptSignals.
+	 */
+	toReadonlyMap(): ReadonlyMap<K, V>;
+
+	/**
 	 * Returns a string representation of this data structure.
 	 */
 	toString(): string;
