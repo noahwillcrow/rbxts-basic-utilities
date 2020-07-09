@@ -2,6 +2,7 @@ export * from "./classes/Lazy";
 
 export * from "./classes/DoublyLinkedList";
 export { ReadonlyDoublyLinkedList } from "./interfaces/ReadonlyDoublyLinkedList";
+export { ReadonlyDoublyLinkedNode } from "./types/DoublyLinkedNode";
 
 export * from "./classes/Stack";
 export * from "./classes/Queue";
