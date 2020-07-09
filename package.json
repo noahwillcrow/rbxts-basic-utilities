@@ -1,6 +1,6 @@
 {
   "name": "@rbxts/basic-utilities",
-  "version": "0.0.6",
+  "version": "0.0.7",
   "description": "A Roblox-TS package of basic utilities, such as Lazy<T> and StrictMap<K,V>",
   "main": "out/init.lua",
   "scripts": {
