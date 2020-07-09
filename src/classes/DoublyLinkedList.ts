@@ -1,4 +1,4 @@
-import { DoublyLinkedNode } from "../types/DoublyLinkedNode";
+import { DoublyLinkedNode, ReadonlyDoublyLinkedNode } from "../types/DoublyLinkedNode";
 import { ReadonlyDoublyLinkedList } from "../interfaces/ReadonlyDoublyLinkedList";
 
 export class DoublyLinkedList<T> implements ReadonlyDoublyLinkedList<T> {
@@ -34,11 +34,19 @@ export class DoublyLinkedList<T> implements ReadonlyDoublyLinkedList<T> {
 		this.tail = undefined;
 	}
 
+	public getHeadNode(): ReadonlyDoublyLinkedNode<T> | undefined  {
+		return this.head;
+	}
+
 	public getHeadValue() {
 		if (this.head !== undefined) {
 			this.currentSize--;
 			return this.head.value;
 		}
+	}
+
+	public getTailNode(): ReadonlyDoublyLinkedNode<T> | undefined  {
+		return this.tail;
 	}
 
 	public getTailValue() {
