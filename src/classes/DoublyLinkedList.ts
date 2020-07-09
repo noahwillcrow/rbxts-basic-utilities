@@ -29,6 +29,11 @@ export class DoublyLinkedList<T> implements ReadonlyDoublyLinkedList<T> {
 		}
 	}
 
+	public clear() {
+		this.head = undefined;
+		this.tail = undefined;
+	}
+
 	public getHeadValue() {
 		if (this.head !== undefined) {
 			this.currentSize--;
