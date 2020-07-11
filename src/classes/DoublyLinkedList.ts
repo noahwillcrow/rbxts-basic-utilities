@@ -40,7 +40,6 @@ export class DoublyLinkedList<T> implements ReadonlyDoublyLinkedList<T> {
 
 	public getHeadValue() {
 		if (this.head !== undefined) {
-			this.currentSize--;
 			return this.head.value;
 		}
 	}
@@ -51,7 +50,6 @@ export class DoublyLinkedList<T> implements ReadonlyDoublyLinkedList<T> {
 
 	public getTailValue() {
 		if (this.tail !== undefined) {
-			this.currentSize--;
 			return this.tail.value;
 		}
 	}
