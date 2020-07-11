@@ -99,6 +99,7 @@ export class DoublyLinkedList<T> implements ReadonlyDoublyLinkedList<T> {
 
 		if (this.head !== undefined) {
 			node.nextNode = this.head;
+			this.head.previousNode = node;
 			this.head = node;
 		} else {
 			this.head = node;
@@ -115,6 +116,7 @@ export class DoublyLinkedList<T> implements ReadonlyDoublyLinkedList<T> {
 
 		if (this.tail !== undefined) {
 			node.previousNode = this.tail;
+			this.tail.nextNode = node;
 			this.tail = node;
 		} else {
 			this.head = node;
