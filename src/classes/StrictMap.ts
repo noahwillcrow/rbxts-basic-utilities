@@ -7,13 +7,17 @@ export class StrictMap<K, V> implements ReadonlyStrictMap<K, V> {
 		entries?: ReadonlyArray<[K, V]>,
 		private readonly getMissingKeyErrorMessage?: (key: K) => string,
 	) {
-		this.map = new Map<K, V>(entries);
+		this.map = new Map<K, V>(entries ?? []);
 	}
 
 	// Read methods
 
 	public entries() {
-		return this.map.entries();
+		const result = new Array<[K, V]>();
+		for (const [key, value] of this.map) {
+			result.push([key, value]);
+		}
+		return result;
 	}
 
 	public forEach(callbackfn: (value: V, key: K, self: this) => void) {
@@ -29,7 +33,11 @@ export class StrictMap<K, V> implements ReadonlyStrictMap<K, V> {
 	}
 
 	public keys() {
-		return this.map.keys();
+		const result = new Array<K>();
+		for (const [key] of this.map) {
+			result.push(key);
+		}
+		return result;
 	}
 
 	public mustGet(key: K) {
@@ -50,15 +58,19 @@ export class StrictMap<K, V> implements ReadonlyStrictMap<K, V> {
 	}
 
 	public toReadonlyMap(): ReadonlyMap<K, V> {
-		return new ReadonlyMap(this.map.entries());
+		return new ReadonlyMap(this.entries());
 	}
 
 	public toString() {
-		return this.map.toString();
+		return game.GetService("HttpService").JSONEncode(this.map);
 	}
 
 	public values() {
-		return this.map.values();
+		const result = new Array<V>();
+		for (const [, value] of this.map) {
+			result.push(value);
+		}
+		return result;
 	}
 
 	// Mutation methods

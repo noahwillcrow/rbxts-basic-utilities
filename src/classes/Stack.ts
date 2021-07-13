@@ -1,11 +1,12 @@
 import { DoublyLinkedList } from "./DoublyLinkedList";
 import { ReadonlyFiniteIterator } from "../interfaces/ReadonlyFiniteIterator";
+import { reverseArray } from "../util/reverseArray";
 
 export class Stack<T> implements ReadonlyFiniteIterator<T> {
 	private readonly linkedList: DoublyLinkedList<T>;
 
 	public constructor(values?: ReadonlyArray<T>) {
-		this.linkedList = new DoublyLinkedList(values !== undefined ? values.reverse() : undefined);
+		this.linkedList = new DoublyLinkedList(values !== undefined ? reverseArray(values) : undefined);
 	}
 
 	public getNextValue() {
@@ -25,7 +26,7 @@ export class Stack<T> implements ReadonlyFiniteIterator<T> {
 	}
 
 	public pushArray(values: ReadonlyArray<T>) {
-		const tempLinkedList = new DoublyLinkedList(values.reverse());
+		const tempLinkedList = new DoublyLinkedList(reverseArray(values));
 		this.linkedList.pushListToHead(tempLinkedList);
 	}
 

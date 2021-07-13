@@ -22,6 +22,7 @@
   },
   "types": "out/index.d.ts",
   "devDependencies": {
-    "@rbxts/types": "^1.0.362"
+    "@rbxts/compiler-types": "^1.1.1-types.5",
+    "@rbxts/types": "^1.0.503"
   }
 }
